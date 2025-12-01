@@ -1,0 +1,39 @@
+{
+  "validator": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": [
+        "ID",
+        "NOMBRE",
+        "A_PATERNO",
+        "A_MATERNO",
+        "ID_TROLE"
+      ],
+      "properties": {
+        "ID": {
+          "bsonType": "int",
+          "description": "ID del usuario (NUMBER(8,0))"
+        },
+        "NOMBRE": {
+          "bsonType": "string",
+          "maxLength": 50,
+          "description": "Nombre del usuario"
+        },
+        "A_PATERNO": {
+          "bsonType": "string",
+          "maxLength": 50,
+          "description": "Apellido paterno"
+        },
+        "A_MATERNO": {
+          "bsonType": "string",
+          "maxLength": 50,
+          "description": "Apellido materno"
+        },
+        "ID_TROLE": {
+          "bsonType": "int",
+          "description": "Rol del usuario (NUMBER(2,0))"
+        }
+      }
+    }
+  }
+}
